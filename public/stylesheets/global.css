@@ -1,0 +1,116 @@
+@charset "utf-8";
+/*~~~~~~~~~~~reset~~~~~~~~~~~~~*/
+/*常用标签默认margin归零*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,textarea,form,figcaption,figure{
+	margin:0;
+}
+/*列表默认padding归零,取消项目符号*/
+ul,ol{
+	padding: 0;
+	list-style: none;
+}
+/*h5新标签兼容处理*/
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
+	display: block;
+}
+/*表单元素默认未继承body字体属性,需要单独设置(for IE)*/
+button,input,select,textarea{
+	font-family: inherit;
+}
+input,select{
+	vertical-align: middle;
+}
+button{
+	background:none;
+	border:none;
+	color:inherit;
+	font-size: inherit;
+}
+button:hover{
+	color:#5D9CEC;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~global~~~~~~~~~~~~~~*/
+/*基础body设置:通常包含前景背景+文字基准(字体字号行高)*/
+body{
+	background:#f1f2f6;
+	color:#434a54;
+	font-family:"Hiragino Sans GB","Microsoft Yahei",arial,\5b8b\4f53,"Helvetica Neue",Helvetica,STHeiTi,sans-serif;;
+	font-size:16px;
+	line-height: 1.8;
+}
+html,body{
+	height: 100%;
+}
+.align_center{
+	width:1200px;
+	margin:0 auto;
+}
+button{
+	cursor: pointer;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover{
+	color:#5D9CEC;
+}
+/* ~~~~~~~~header~~~~~~~~ */
+header{
+	line-height: 50px;
+	background-color:#434A54;
+	color:#5D9CEC;
+	padding-left: 30px;
+	margin-top: 80px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+/* ~~~~~~~~~~~main~~~~~~~~~~~ */
+.main{
+	height: 100%;
+}
+.main .list{
+	width:240px;
+	background-color:#fff;
+	float: left;
+	height: 100%;
+}
+.main .list li{
+	line-height: 45px;
+	padding-left: 30px;
+}
+.main .list li:hover{
+	color:#5D9CEC;
+}
+.main .main_info{
+	background-color:#fff;
+	margin-left: 260px;
+	height: 100%;
+	padding: 30px;
+	padding-top: 0px;
+}
+.main .main_info h2{
+	font-weight:normal;
+	font-size: 30px;
+	padding-top: 30px;
+}
+.main .main_info table .hide{
+	display: none;
+}
+.main .main_info table th,.main .main_info table td{
+	font-weight: normal;
+	line-height: 50px;
+	text-align: center;
+	width:176px;
+}
+.main .main_info table tfoot td{
+	text-align: right;
+	padding-right: 60px;
+}
+.main .main_info table tfoot td input{
+	line-height: 22px;
+	width: 230px;
+}
+.main .main_info table tfoot td i{
+	font-style: normal;
+}

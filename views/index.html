@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>学生信息管理系统</title>
+    <link rel="stylesheet" href="stylesheets/global.css">
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/layer/layer.js"></script>
+    <script src="javascripts/index.js"></script>
+</head>
+<body>
+    <header><div class="align_center">学生信息管理系统</div></header>
+    <div class="main align_center">
+        <ul class="list">
+                <li id="toUsers"><a href="users">学生信息</a></li>
+                <li><a href="">成绩查询</a></li>
+                <li><a href="">等等等等</a></li>
+                <li><a href="">等等等等</a></li>
+                <li><a href="">等等等等</a></li>
+        </ul>
+        <div class="main_info">
+            <table class="stu_info">
+                <thead>
+                    <th class="hide">学生id</th>
+                    <th>学生名字</th>
+                    <th>学生年龄</th>
+                    <th>学生性别</th>
+                    <th>学生班级</th>
+                    <th><button id="addStu">新增</button></th>
+                </thead>
+                <tbody>
+                    
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            <div class="pageInfo">
+                                <button id="prev"><</button>
+                                <button id="next">></button>
+                                第<i id="page">1</i>页
+                            </div>
+                            <button id="allStu">全部查找</button>
+                            <button id="del">删除</button>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
